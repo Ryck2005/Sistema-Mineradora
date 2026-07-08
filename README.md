@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema Integrado da Mineradora
 
 Sistema web simples para gerenciar informações básicas de uma mineradora. O projeto possui front-end em React com Vite, back-end em Node.js com Express e banco de dados no Supabase.
@@ -424,3 +425,6 @@ npm run dev
 ## Resumo
 
 Este projeto é um sistema simples para controle de uma mineradora, com páginas para gerenciar cidades, setores, equipamentos, funcionários e serviços. O sistema possui uma tela Home com visão geral dos dados e utiliza Supabase como banco de dados online.
+=======
+# Sistema-Mineradora
+>>>>>>> 1a47dcb8f4449a332d0b4af34df74b92160b4b40
