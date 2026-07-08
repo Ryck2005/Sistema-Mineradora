@@ -14,6 +14,14 @@ A versão online utiliza:
 - Render para hospedar o back-end;
 - Supabase como banco de dados online.
 
+
+## Compatibilidade
+
+O sistema pode ser acessado pelo navegador em computadores, notebooks, tablets e celulares.
+
+A interface foi feita com HTML, CSS e React, utilizando ajustes simples de responsividade para permitir o uso em telas maiores e menores.
+
+
 ## Visão geral
 
 O sistema permite cadastrar, listar, editar, excluir e pesquisar informações relacionadas a:
