@@ -1,6 +1,6 @@
 # Sistema Integrado da Mineradora
 
-Sistema web simples para gerenciar informações básicas de uma mineradora. O projeto possui front-end em React com Vite, back-end em Node.js com Express e banco de dados no Supabase.
+Sistema web simples para gerenciamento de informações de uma mineradora. O projeto possui front-end em React com Vite, back-end em Node.js com Express e banco de dados no Supabase.
 
 ## Versão online
 
@@ -24,9 +24,9 @@ O sistema permite cadastrar, listar, editar, excluir e pesquisar informações r
 - Funcionários;
 - Serviços.
 
-Também existe uma página Home com uma visão geral dos dados cadastrados, exibindo quantidades e resumos do sistema.
+Também existe uma página Home com uma visão geral dos dados cadastrados, exibindo resumos do sistema.
 
-A comunicação do sistema funciona desta forma:
+A comunicação funciona desta forma:
 
 ```text
 Front-end React/Vite
@@ -47,13 +47,16 @@ Banco de dados
 - Vite;
 - Node.js;
 - Express;
-- Supabase.
+- Supabase;
+- Netlify;
+- Render;
+- GitHub.
 
 ## Funcionalidades
 
 ### Início
 
-Página inicial de apresentação do sistema. Na versão atual, ela aparece como um popup de boas-vindas quando o usuário entra no sistema pela primeira vez.
+Página inicial de apresentação do sistema. Na versão atual, ela aparece como um pop-up de boas-vindas quando o usuário entra no sistema pela primeira vez.
 
 ### Home
 
@@ -242,7 +245,7 @@ Script para atualizar um banco já criado anteriormente.
 supabase/schema.sql
 ```
 
-5. Se o banco antigo já existe e deseja apenas atualizar, execute o conteúdo do arquivo:
+Se o banco antigo já existe e deseja apenas atualizar, execute o conteúdo do arquivo:
 
 ```text
 supabase/atualizacao.sql
@@ -298,7 +301,7 @@ Depois rode o back-end:
 npm run dev
 ```
 
-Se estiver funcionando, o terminal mostrará uma mensagem parecida com:
+Se estiver funcionando, o terminal mostrará uma mensagem semelhante a:
 
 ```text
 Servidor rodando na porta 3001
@@ -355,11 +358,13 @@ npm run dev
 
 ### Terminal 2: front-end
 
+Na pasta principal do projeto:
+
 ```bash
 npm run dev
 ```
 
-Depois abra o endereço mostrado pelo Vite no navegador.
+Depois abra o endereço indicado pelo Vite no navegador.
 
 ## Como usar o sistema
 
@@ -396,9 +401,7 @@ VITE_API_URL=https://sua-api-publicada.onrender.com
 
 No projeto online atual, o front-end está publicado em:
 
-```text
 https://systemmineradora.netlify.app/
-```
 
 ## Publicação do back-end
 
@@ -413,9 +416,9 @@ SUPABASE_ANON_KEY=sua_chave_do_supabase
 
 Depois de publicar o back-end, copie a URL gerada e coloque essa URL na variável `VITE_API_URL` do front-end.
 
-## Por que existe delay ao carregar os dados?
+## Por que existe atraso ao carregar os dados?
 
-Na versão online, o sistema está dividido entre serviços diferentes:
+Na versão online, o sistema é dividido entre diferentes serviços:
 
 ```text
 Netlify → Render → Supabase
@@ -425,9 +428,9 @@ O Netlify carrega a tela do sistema rapidamente, mas os dados precisam ser busca
 
 No primeiro acesso, o carregamento pode demorar mais porque o serviço gratuito do Render pode ficar em repouso quando passa um tempo sem receber acessos. Quando alguém abre o sistema novamente, o Render precisa iniciar o back-end antes de responder.
 
-Depois que o back-end já iniciou, as próximas páginas costumam abrir mais rápido. Mesmo assim, ainda pode existir um pequeno delay porque cada página precisa buscar informações no back-end e no Supabase.
+Depois que o back-end já foi iniciado, as próximas páginas costumam abrir mais rápido. Mesmo assim, ainda pode haver um pequeno atraso porque cada página precisa buscar informações no back-end e no Supabase.
 
-Esse comportamento é normal em hospedagens gratuitas e não significa que o sistema está com erro.
+Esse comportamento é normal em hospedagens gratuitas e não significa que o sistema esteja com erro.
 
 ## Observações importantes
 
