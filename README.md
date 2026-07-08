@@ -1,23 +1,34 @@
-<<<<<<< HEAD
 # Sistema Integrado da Mineradora
 
 Sistema web simples para gerenciar informações básicas de uma mineradora. O projeto possui front-end em React com Vite, back-end em Node.js com Express e banco de dados no Supabase.
 
+## Versão online
+
+O sistema publicado pode ser acessado pelo link:
+
+https://systemmineradora.netlify.app/
+
+A versão online utiliza:
+
+- Netlify para hospedar o front-end;
+- Render para hospedar o back-end;
+- Supabase como banco de dados online.
+
 ## Visão geral
 
-O sistema permite cadastrar e consultar informações relacionadas a:
+O sistema permite cadastrar, listar, editar, excluir e pesquisar informações relacionadas a:
 
-- Cidades
-- Setores
-- Equipamentos
-- Funcionários
-- Serviços
+- Cidades;
+- Setores;
+- Equipamentos;
+- Funcionários;
+- Serviços.
 
-Também possui uma página Home com um resumo geral dos dados cadastrados no sistema.
+Também existe uma página Home com uma visão geral dos dados cadastrados, exibindo quantidades e resumos do sistema.
 
 A comunicação do sistema funciona desta forma:
 
-```txt
+```text
 Front-end React/Vite
         ↓
 Back-end Node.js/Express
@@ -29,116 +40,116 @@ Banco de dados
 
 ## Tecnologias utilizadas
 
-- HTML
-- CSS
-- JavaScript
-- React
-- Vite
-- Node.js
-- Express
-- Supabase
+- HTML;
+- CSS;
+- JavaScript;
+- React;
+- Vite;
+- Node.js;
+- Express;
+- Supabase.
 
 ## Funcionalidades
 
 ### Início
 
-Página inicial do sistema, com uma apresentação simples do projeto.
+Página inicial de apresentação do sistema. Na versão atual, ela aparece como um popup de boas-vindas quando o usuário entra no sistema pela primeira vez.
 
 ### Home
 
 Página de visão geral com os principais dados cadastrados, mostrando:
 
-- Total de cidades
-- Total de setores
-- Total de funcionários
-- Total de equipamentos
-- Total de serviços
-- Quantidade de serviços pendentes
-- Quantidade de serviços em andamento
-- Quantidade de serviços finalizados
-- Quantidade de equipamentos disponíveis
-- Quantidade de equipamentos em uso
-- Quantidade de equipamentos em manutenção
-- Tabela simples com os equipamentos cadastrados
+- Total de cidades;
+- Total de setores;
+- Total de funcionários;
+- Total de equipamentos;
+- Total de serviços;
+- Quantidade de serviços pendentes;
+- Quantidade de serviços em andamento;
+- Quantidade de serviços finalizados;
+- Quantidade de equipamentos disponíveis;
+- Quantidade de equipamentos em uso;
+- Quantidade de equipamentos em manutenção;
+- Tabela simples com os equipamentos cadastrados.
 
 ### Cidades
 
-Permite:
+Funcionalidades:
 
-- Cadastrar cidade
-- Listar cidades
-- Editar cidade
-- Excluir cidade
-- Pesquisar cidade por nome
-- Ver o total de cidades cadastradas
+- Cadastrar cidade;
+- Listar cidades;
+- Editar cidade;
+- Excluir cidade;
+- Pesquisar cidade por nome;
+- Ver o total de cidades cadastradas.
 
 ### Setores
 
-Permite:
+Funcionalidades:
 
-- Cadastrar setor
-- Listar setores
-- Editar setor
-- Excluir setor
-- Pesquisar setor por nome
-- Ver o total de setores cadastrados
+- Cadastrar setor;
+- Listar setores;
+- Editar setor;
+- Excluir setor;
+- Pesquisar setor por nome;
+- Ver o total de setores cadastrados.
 
 ### Equipamentos
 
-Permite:
+Funcionalidades:
 
-- Cadastrar equipamento
-- Selecionar um setor já cadastrado
-- Informar o status do equipamento
-- Listar equipamentos
-- Editar equipamento
-- Excluir equipamento
-- Pesquisar equipamento por nome
-- Ver o total de equipamentos cadastrados
+- Cadastrar equipamento;
+- Selecionar um setor já cadastrado;
+- Informar o status do equipamento;
+- Listar equipamentos;
+- Editar equipamento;
+- Excluir equipamento;
+- Pesquisar equipamento por nome;
+- Ver o total de equipamentos cadastrados.
 
 Status disponíveis para equipamentos:
 
-- Disponível
-- Em uso
-- Em manutenção
+- Disponível;
+- Em uso;
+- Em manutenção.
 
 ### Funcionários
 
-Permite:
+Funcionalidades:
 
-- Cadastrar funcionário
-- Selecionar uma cidade já cadastrada
-- Informar o cargo
-- Listar funcionários
-- Editar funcionário
-- Excluir funcionário
-- Pesquisar funcionário por nome
-- Ver o total de funcionários cadastrados
+- Cadastrar funcionário;
+- Selecionar uma cidade já cadastrada;
+- Informar o cargo;
+- Listar funcionários;
+- Editar funcionário;
+- Excluir funcionário;
+- Pesquisar funcionário por nome;
+- Ver o total de funcionários cadastrados.
 
 ### Serviços
 
-Permite:
+Funcionalidades:
 
-- Cadastrar serviço
-- Selecionar equipamento já cadastrado
-- Selecionar cidade já cadastrada
-- Selecionar funcionário responsável
-- Informar o status do serviço
-- Listar serviços
-- Editar serviço
-- Excluir serviço
-- Pesquisar serviço por descrição
-- Ver o total de serviços cadastrados
+- Cadastrar serviço;
+- Selecionar equipamento já cadastrado;
+- Selecionar cidade já cadastrada;
+- Selecionar funcionário responsável;
+- Informar o status do serviço;
+- Listar serviços;
+- Editar serviço;
+- Excluir serviço;
+- Pesquisar serviço por descrição;
+- Ver o total de serviços cadastrados.
 
 Status disponíveis para serviços:
 
-- Pendente
-- Em andamento
-- Finalizado
+- Pendente;
+- Em andamento;
+- Finalizado.
 
 ## Estrutura de pastas
 
-```txt
+```text
 sistema-mineradora-iniciante/
 ├── backend/
 │   ├── src/
@@ -178,7 +189,7 @@ sistema-mineradora-iniciante/
 
 ### `src/App.jsx`
 
-Controla qual página será exibida na tela. O projeto usa um controle simples de páginas com estado, sem React Router.
+Controla qual página será exibida na tela. O projeto usa um controle simples de páginas por estado, sem React Router.
 
 ### `src/components/Menu.jsx`
 
@@ -188,13 +199,13 @@ Contém o menu de navegação do sistema.
 
 Contém as páginas do sistema:
 
-- `Inicio.jsx`
-- `Home.jsx`
-- `Cidades.jsx`
-- `Setores.jsx`
-- `Equipamentos.jsx`
-- `Funcionarios.jsx`
-- `Servicos.jsx`
+- `Inicio.jsx`;
+- `Home.jsx`;
+- `Cidades.jsx`;
+- `Setores.jsx`;
+- `Equipamentos.jsx`;
+- `Funcionarios.jsx`;
+- `Servicos.jsx`.
 
 ### `src/services/api.js`
 
@@ -220,32 +231,32 @@ Script para criar o banco de dados do zero no Supabase.
 
 Script para atualizar um banco já criado anteriormente.
 
-## Configuração do banco de dados
+## Configuração do banco de dados no Supabase
 
 1. Acesse o Supabase.
 2. Crie um novo projeto.
 3. Abra o SQL Editor.
 4. Se for criar o banco do zero, execute o conteúdo do arquivo:
 
-```txt
+```text
 supabase/schema.sql
 ```
 
-5. Se o banco antigo já existir e for apenas atualizar, execute o conteúdo do arquivo:
+5. Se o banco antigo já existe e deseja apenas atualizar, execute o conteúdo do arquivo:
 
-```txt
+```text
 supabase/atualizacao.sql
 ```
 
 As principais tabelas usadas são:
 
-- `cidades`
-- `setores`
-- `equipamentos`
-- `funcionarios`
-- `servicos`
+- `cidades`;
+- `setores`;
+- `equipamentos`;
+- `funcionarios`;
+- `servicos`.
 
-## Configuração do back-end
+## Configuração do back-end local
 
 Entre na pasta do back-end:
 
@@ -261,13 +272,13 @@ npm install
 
 Copie o arquivo:
 
-```txt
+```text
 backend/.env.example
 ```
 
 Crie um novo arquivo chamado:
 
-```txt
+```text
 backend/.env
 ```
 
@@ -279,7 +290,7 @@ SUPABASE_URL=https://xxxxxxxx.supabase.co
 SUPABASE_ANON_KEY=sua_chave_do_supabase
 ```
 
-A URL e a chave do Supabase ficam na área de configurações do projeto, na parte de API.
+A URL e a chave do Supabase ficam na área de configurações do projeto, na parte de API Keys.
 
 Depois rode o back-end:
 
@@ -287,13 +298,13 @@ Depois rode o back-end:
 npm run dev
 ```
 
-Se estiver funcionando, o terminal vai mostrar uma mensagem parecida com:
+Se estiver funcionando, o terminal mostrará uma mensagem parecida com:
 
-```txt
+```text
 Servidor rodando na porta 3001
 ```
 
-## Configuração do front-end
+## Configuração do front-end local
 
 Na pasta principal do projeto, instale as dependências:
 
@@ -303,13 +314,13 @@ npm install
 
 Copie o arquivo:
 
-```txt
+```text
 .env.example
 ```
 
 Crie um novo arquivo chamado:
 
-```txt
+```text
 .env
 ```
 
@@ -325,13 +336,13 @@ Depois rode o front-end:
 npm run dev
 ```
 
-Normalmente o sistema abrirá em:
+Normalmente o sistema será aberto em:
 
-```txt
+```text
 http://localhost:5173
 ```
 
-## Como rodar o projeto
+## Como rodar o projeto localmente
 
 Para usar o sistema localmente, é necessário abrir dois terminais.
 
@@ -353,12 +364,12 @@ Depois abra o endereço mostrado pelo Vite no navegador.
 ## Como usar o sistema
 
 1. Abra o sistema no navegador.
-2. Acesse a página `Cidades` e cadastre as cidades.
-3. Acesse a página `Setores` e cadastre os setores.
-4. Acesse a página `Equipamentos` e cadastre os equipamentos, selecionando o setor correspondente.
-5. Acesse a página `Funcionários` e cadastre os funcionários, selecionando a cidade correspondente.
-6. Acesse a página `Serviços` e cadastre os serviços, selecionando equipamento, cidade e responsável.
-7. Acesse a página `Home` para visualizar o resumo geral dos dados cadastrados.
+2. Acesse a página Cidades e cadastre as cidades.
+3. Acesse a página Setores e cadastre os setores.
+4. Acesse a página Equipamentos e cadastre os equipamentos, selecionando o setor correspondente.
+5. Acesse a página Funcionários e cadastre os funcionários, selecionando a cidade correspondente.
+6. Acesse a página Serviços e cadastre os serviços, selecionando equipamento, cidade e responsável.
+7. Acesse a página Home para visualizar o resumo geral dos dados cadastrados.
 
 ## Publicação do front-end no Netlify
 
@@ -370,7 +381,7 @@ npm run build
 
 No Netlify, use as seguintes configurações:
 
-```txt
+```text
 Build command: npm run build
 Publish directory: dist
 ```
@@ -380,12 +391,18 @@ Se o front-end for publicado no Netlify, a variável `VITE_API_URL` deve apontar
 Exemplo:
 
 ```env
-VITE_API_URL=https://sua-api-publicada.com
+VITE_API_URL=https://sua-api-publicada.onrender.com
+```
+
+No projeto online atual, o front-end está publicado em:
+
+```text
+https://systemmineradora.netlify.app/
 ```
 
 ## Publicação do back-end
 
-O back-end Node.js precisa ficar rodando em um serviço que aceite aplicações Node.js, como Render, Railway ou outro servidor.
+O back-end Node.js precisa ficar rodando em um serviço que aceita aplicações Node.js, como Render, Railway ou outro servidor.
 
 Na publicação do back-end, configure as variáveis:
 
@@ -396,6 +413,22 @@ SUPABASE_ANON_KEY=sua_chave_do_supabase
 
 Depois de publicar o back-end, copie a URL gerada e coloque essa URL na variável `VITE_API_URL` do front-end.
 
+## Por que existe delay ao carregar os dados?
+
+Na versão online, o sistema está dividido entre serviços diferentes:
+
+```text
+Netlify → Render → Supabase
+```
+
+O Netlify carrega a tela do sistema rapidamente, mas os dados precisam ser buscados no back-end publicado no Render. Depois, o back-end consulta o banco de dados no Supabase e devolve as informações para o front-end.
+
+No primeiro acesso, o carregamento pode demorar mais porque o serviço gratuito do Render pode ficar em repouso quando passa um tempo sem receber acessos. Quando alguém abre o sistema novamente, o Render precisa iniciar o back-end antes de responder.
+
+Depois que o back-end já iniciou, as próximas páginas costumam abrir mais rápido. Mesmo assim, ainda pode existir um pequeno delay porque cada página precisa buscar informações no back-end e no Supabase.
+
+Esse comportamento é normal em hospedagens gratuitas e não significa que o sistema está com erro.
+
 ## Observações importantes
 
 - O arquivo `.env` não deve ser enviado para o GitHub.
@@ -403,6 +436,7 @@ Depois de publicar o back-end, copie a URL gerada e coloque essa URL na variáve
 - Para recriar a pasta `node_modules`, basta rodar `npm install`.
 - O front-end depende do back-end rodando para cadastrar, listar, editar e excluir dados.
 - O back-end depende do Supabase configurado corretamente para salvar os dados.
+- Na versão online, o front-end usa a URL pública do back-end.
 
 ## Comandos principais
 
@@ -424,7 +458,4 @@ npm run dev
 
 ## Resumo
 
-Este projeto é um sistema simples para controle de uma mineradora, com páginas para gerenciar cidades, setores, equipamentos, funcionários e serviços. O sistema possui uma tela Home com visão geral dos dados e utiliza Supabase como banco de dados online.
-=======
-# Sistema-Mineradora
->>>>>>> 1a47dcb8f4449a332d0b4af34df74b92160b4b40
+Este projeto é um sistema simples para controle de uma mineradora, com páginas para gerenciamento de cidades, setores, equipamentos, funcionários e serviços. O sistema possui uma tela Home com visão geral dos dados e utiliza Supabase como banco de dados online.
